@@ -1280,7 +1280,7 @@
       '#avatar img',
       'ytd-channel-avatar-editor img',
       '.ytd-video-owner-renderer img[src*="yt"]',
-      'img[src*="yt3.ggpht.com"]', // Добавляем прямой селектор для аватаров
+      'img[src*="yt3.ggpht.com"]', // Add a direct selector for avatars
       'img[src*="yt4.ggpht.com"]',
     ];
 
@@ -1290,7 +1290,7 @@
         if (!img.src.includes('yt')) return;
         if (img.closest('.avatar-overlay')) return;
 
-        // Проверяем, что это действительно аватар (квадратное изображение)
+        // Verify that this is actually an avatar (square image)
         const isAvatar = img.naturalWidth > 0 && img.naturalWidth === img.naturalHeight;
 
         if (isAvatar || img.src.includes('ggpht.com')) {
@@ -1305,7 +1305,7 @@
       'yt-image-banner-view-model img',
       'ytd-c4-tabbed-header-renderer img[src*="yt"]',
       '#channel-header img[src*="banner"]',
-      'img[src*="banner"]', // Более общий селектор для баннеров
+      'img[src*="banner"]', // More general selector for banners
     ];
 
     bannerSelectors.forEach(selector => {
@@ -1315,7 +1315,7 @@
 
         const isBanner =
           (img.src.includes('banner') || img.src.includes('yt')) &&
-          img.naturalWidth > img.naturalHeight * 2; // Баннеры обычно широкие
+          img.naturalWidth > img.naturalHeight * 2; // Banners are usually wide
 
         if (isBanner || img.src.includes('banner')) {
           addBannerOverlay(img);

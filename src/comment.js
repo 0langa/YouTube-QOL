@@ -22,7 +22,7 @@
   const CONFIG = {
     selectors: {
       deleteButtons:
-        'div[class^="VfPpkd-Bz112c-"], button[aria-label*="Delete"], button[aria-label*="Удалить"], button[aria-label*="Remove"]',
+        'div[class^="VfPpkd-Bz112c-"], button[aria-label*="Delete"], button[aria-label*="Remove"]',
       menuButton: '[aria-haspopup="menu"]',
     },
     classes: {

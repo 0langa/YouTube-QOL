@@ -305,7 +305,7 @@
           if (patternWord === testWord) {
             matchCount++;
           }
-          // Partial match (for truncated words like "сте..." vs "стекла")
+          // Partial match (for truncated words like "intro..." vs "introduction")
           else if (testWord.length >= 3 && patternWord.startsWith(testWord)) {
             matchCount += 0.8; // Partial credit
             partialWordMatch = true;
@@ -718,7 +718,7 @@
    * @returns {Array<{time: number, label: string, isChapter: boolean}>} Array of chapter objects
    */
   const getYouTubeChapters = () => {
-    // Расширенный поиск глав/эпизодов
+    // Extended chapter/segment search
     const selectors = [
       'ytd-macro-markers-list-item-renderer',
       'ytd-chapter-renderer',
@@ -731,7 +731,7 @@
     const chapters = new Map();
 
     items.forEach(item => {
-      // Попробуем разные способы извлечения времени и заголовка
+      // Try different ways to extract time and title
       const timeSelectors = ['.time-info', '.timestamp', '#time', 'span[id*="time"]'];
       const titleSelectors = ['.marker-title', '.chapter-title', '#details', 'h4', '.title'];
 
@@ -756,7 +756,7 @@
       if (timeText) {
         const time = parseTime(timeText.trim());
         if (time !== null) {
-          // Очищаем заголовок от лишних пробелов и переносов строк
+          // Clean title from extra spaces and line breaks
           let cleanTitle = titleText?.trim().replace(/\s+/g, ' ') || '';
 
           // Debug logging

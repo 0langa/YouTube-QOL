@@ -267,7 +267,6 @@
             if (
               btnText.includes('allow') ||
               btnText.includes('dismiss') ||
-              btnText.includes('разрешить') ||
               btn.getAttribute('aria-label')?.includes('close')
             ) {
               btn.click();
@@ -288,9 +287,7 @@
           const isAdBlockWarning =
             text.includes('ad blocker') ||
             text.includes('ad blockers') ||
-            text.includes('блокировщик') ||
             text.includes('will be blocked') ||
-            text.includes('будет заблокирован') ||
             (text.includes('allow') && text.includes('ads')) ||
             (text.includes('blocker') && text.includes('video'));
 

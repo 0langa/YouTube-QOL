@@ -155,14 +155,14 @@
       ytmusic-app-layout:has(ytmusic-search-box:has(input:focus)) #main-panel, ytmusic-app-layout:has(ytmusic-searchbox:has(input:focus)) #main-panel {filter: blur(18px) !important; transform: scale(1.03) !important;}
     `;
 
-  // Ховер эффекты для боковой панели
+  // Hover effects for the side panel
   const hoverStyles = `
         .ytmusic-guide-renderer {opacity: 0.01 !important; transition: opacity 0.5s ease-in-out !important;}        
         .ytmusic-guide-renderer:hover { opacity: 1 !important;}        
         ytmusic-app[is-bauhaus-sidenav-enabled] #guide-wrapper.ytmusic-app {background-color: transparent !important; border: none !important;}    
     `;
 
-  // Боковая панель плеера
+  // Player side panel
   const playerSidebarStyles = `
         #side-panel {width: 40em !important; height: 80vh !important; padding: 0 2em !important; right: -30em !important; top: 10vh !important; opacity: 0 !important; position: absolute !important; transition: all 0.3s ease-in-out !important; backdrop-filter: blur(5px) !important; background-color: #0005 !important; border-radius: 1em !important; box-shadow: rgba(0, 0, 0, 0.15) 0px -36px 30px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;}        
         #side-panel tp-yt-paper-tabs {transition: height 0.3s ease-in-out !important; height: 0 !important;}        
@@ -177,26 +177,26 @@
         #side-panel .ytmusic-top-button {position: absolute !important; bottom: 20px !important; right: 20px !important; z-index: 1200 !important;}
     `;
 
-  // Центрированный плеер
+  // Centered player
   const centeredPlayerStyles = `
         ytmusic-app-layout:not([player-ui-state="FULLSCREEN"]) #main-panel {position: absolute !important; height: 70vh !important; max-width: 70vw !important; aspect-ratio: 1 !important; top: 50vh !important; left: 50vw !important; transform: translate(-50%, -50%) !important;}        
         #player-page {padding: 0 !important; margin: 0 !important; left: 0 !important; top: 0 !important; height: 100% !important; width: 100% !important;}
     `;
 
-  // Стилизация плеер бара (центрированная версия)
+  // Player bar styling (centered version)
   const playerBarStyles = `
         ytmusic-player-bar, #player-bar-background {margin: 1vw !important; width: 98vw !important; border-radius: 1em !important; overflow: hidden !important; transition: all 0.5s ease-in-out !important; background-color: #0002 !important; box-shadow: rgba(0, 0, 0, 0.15) 0px -36px 30px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;}        
         #layout:not([player-ui-state="PLAYER_PAGE_OPEN"]) #player-bar-background {background-color: #0005 !important;}
     `;
 
-  // Центрирование плеер бара
+  // Centering the player bar
   const centeredPlayerBarStyles = `
         #left-controls {position: absolute !important; left: 49vw !important; bottom: 15px !important; transform: translateX(-50%) !important; width: fit-content !important; order: 1 !important;}        
         .time-info {position: absolute !important; bottom: -10px !important; left: 0 !important; width: 100% !important; text-align: center !important; padding: 0 !important; margin: 0 !important;}
         .middle-controls {position: absolute !important; left: 1vw !important; bottom: 15px !important; max-width: 30vw !important; order: 0 !important;}
     `;
 
-  // Настройки мини-плеера
+  // Mini-player settings
   const miniPlayerStyles = `
         #main-panel:has(ytmusic-player[player-ui-state="MINIPLAYER"]) {position: fixed !important; width: 100vw !important; height: 100vh !important; top: -100vh !important; left: 0 !important; margin: 0 !important; padding: 0 !important; transform: none !important; max-width: 100vw !important;}        
         ytmusic-player[player-ui-state="MINIPLAYER"] {position: fixed !important; bottom: calc(100vh + 120px) !important; right: 30px !important; width: 350px !important; height: fit-content !important;}        

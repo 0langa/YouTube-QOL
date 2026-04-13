@@ -337,8 +337,6 @@
           if (
             aria.includes('subtit') ||
             aria.includes('caption') ||
-            aria.includes('субтит') ||
-            aria.includes('субтитр') ||
             aria.includes('cc')
           ) {
             if (b.offsetParent !== null) {
@@ -416,9 +414,7 @@
             aria.includes('mute') ||
             aria.includes('unmute') ||
             aria.includes('sound') ||
-            aria.includes('volume') ||
-            aria.includes('звук') ||
-            aria.includes('громк')
+            aria.includes('volume')
           ) {
             if (b.offsetParent !== null) {
               b.click();

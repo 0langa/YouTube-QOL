@@ -933,24 +933,7 @@
             for (const mi of menuItems) {
               const text = (mi.textContent || '').toLowerCase();
               // Match various translations of "Remove from playlist"
-              if (
-                text.includes('remove') ||
-                text.includes('удалить') ||
-                text.includes('supprimer') ||
-                text.includes('entfernen') ||
-                text.includes('eliminar') ||
-                text.includes('rimuovi') ||
-                text.includes('kaldır') ||
-                text.includes('削除') ||
-                text.includes('삭제') ||
-                text.includes('移除') ||
-                text.includes('oʻchirish') ||
-                text.includes('жою') ||
-                text.includes('өчүрүү') ||
-                text.includes('выдаліць') ||
-                text.includes('премахване') ||
-                text.includes('xóa')
-              ) {
+              if (text.includes('remove') || text.includes('delete')) {
                 removeOption = mi;
                 break;
               }

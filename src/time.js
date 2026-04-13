@@ -127,9 +127,9 @@
 
   // Localization: prefer centralized i18n with local fallback for critical keys
   const _localFallback = {
-    resumePlayback: { en: 'Resume playback?', ru: 'Продолжить воспроизведение?' },
-    resume: { en: 'Resume', ru: 'Продолжить' },
-    startOver: { en: 'Start over', ru: 'Начать сначала' },
+    resumePlayback: { en: 'Resume playback?' },
+    resume: { en: 'Resume' },
+    startOver: { en: 'Start over' },
   };
 
   const escapeRegex = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');

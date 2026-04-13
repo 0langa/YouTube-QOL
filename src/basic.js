@@ -1253,13 +1253,13 @@ if (typeof window !== 'undefined') {
         resetPoints: 'o',
       },
 
-      // Состояние сайтов внутри сабменю кнопки Download (ytdl всегда включён)
+      // Download site states inside the Download submenu (ytdl always enabled)
       downloadSites: {
         direct: true,
         externalDownloader: true,
         ytdl: true,
       },
-      // Настройки кастомизации download сайтов
+      // Customization settings for download sites
       downloadSiteCustomization: {
         externalDownloader:
           typeof window !== 'undefined' && window.YouTubePlusConstants

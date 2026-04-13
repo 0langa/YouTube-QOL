@@ -2149,7 +2149,7 @@ const executionScript = () => {
               /*
               {
                 "style": "BADGE_STYLE_TYPE_SIMPLE",
-                "label": "注目のコメント",
+                "label": "Top comments",
                 "trackingParams": "XXXXXX"
             }
               */

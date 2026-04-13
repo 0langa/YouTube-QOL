@@ -1174,7 +1174,7 @@ const onDomReady = (() => {
     // Fallback: try to find by button label or position
     const dislikeBtn =
       buttons.querySelector('button[aria-label*="islike"]') ||
-      buttons.querySelector('button[aria-label*="Не нравится"]');
+      buttons.querySelector('button[aria-label*="Dislike"]');
     if (dislikeBtn) {
       return dislikeBtn.closest('dislike-button-view-model') || dislikeBtn.parentElement;
     }
