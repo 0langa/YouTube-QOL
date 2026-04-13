@@ -1,0 +1,15 @@
+node_modules/
+
+# Generated build output
+youtube.user.js
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+
+# Editor/OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

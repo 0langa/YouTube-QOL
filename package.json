@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "youtube-qol-userscript",
+  "version": "2.4.5",
+  "description": "Self-contained YouTube userscript project",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "node build.js"
+  }
+}
